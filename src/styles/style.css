@@ -409,15 +409,11 @@ tr:nth-child(even) {
 }
 
 .speaker-second-column {
-    width: 25%;
+    width: 30%;
 }
 
 .speaker-third-column {
-    width: 30%;
-}
-
-.speaker-fourth-column {
-    width: 30%;
+    width: 55%;
 }
 
 .pr-first-column {
