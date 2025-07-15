@@ -167,6 +167,16 @@ div.content {
     /* Adjust text color for better visibility */
 }
 
+.photo-section {
+    background-image: url('../../assets/images/bg2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    /* Adjust text color for better visibility */
+}
+
 .image-container {
     position: relative;
     text-align: center;
@@ -426,4 +436,55 @@ tr:nth-child(even) {
 
 .pr-third-column {
     width: 60%;
+}
+
+
+.photo-section {
+    margin-bottom: 20px;
+}
+
+.photo-gallery {
+    margin: 40px 0;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.photo-grid img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.photo-grid a {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo-grid img {
+        width: 150px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-grid img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
 }
